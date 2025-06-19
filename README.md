@@ -8,7 +8,6 @@ Posar en marxa:
 
 DEPENDENCES
 - PIP: google-api-python-client
-- PIP: google-auth-httplib2
 - PIP: google-auth-oauthlib
 - PIP: mysql-connector-python
  
@@ -22,21 +21,15 @@ API
        
   2. Crea credencials OAuth
      - "Credenciales"
-     - "Crear Credenciales" --> "ID Cliente de OAuth"
-     - Emplenar:
-         - "Tipo de aplicacion" --> "Aplicación web"
-         - "Nombre"
+     - "Crear Credenciales" --> "Cuenta de Servicio"
+       - Emplenar:
+           - "Nombre"
+           - "Id"
+       - "Continuar"
+       - Deixar rol en blanc
+       - "Continuar"
+       - "Listo"
       
-     - "URI de redirecciónameinto autorizados" --> "AGREGAR URI" --> http://IP SERVIDOR:8080/ o http://localhost:8080/
+     - "Claves" --> "Agregar clave" --> "JSON"
      - "Crear"
-       
-  3. Permitir usuari de develop
-     - "Google Auth Platform"
-     - "Público"
-     - "Usuarios de prueba" --> "ADD USERS" --> email del usuari que crea el API
-       
-  4. Descarregar .json de credencials
-     - "Google Auth Platform"
-     - "Clientes"
-     - Simbol de descarregar a dreta de la ID creada
-  
+     - Moure JSON a l'arrel, i configurar al codi
